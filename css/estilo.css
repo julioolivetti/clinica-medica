@@ -1,0 +1,211 @@
+/* Estilos Gerais */
+* {
+    box-sizing: border-box;
+  }
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+main {
+    color: #0000008c;
+    margin-bottom: 60px;
+}
+.tamanho-maximo {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+/* Fim Estilos Gerais */
+
+/* Estilos Topo */
+.topo-links {
+    display: flex;
+}
+.topo-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+}
+.topo-links a:hover {
+    color: #004b4c;
+  }
+
+.topo-conteudo {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 60px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+.logo-topo img {
+    height: 70px;
+}
+.topo {
+    background-color: #00cad1;
+    width: 100%;
+}
+/* Fim Estilos Topo */
+
+/* Estilos Conteúdo */
+.back-conteudo {
+    position: relative;
+    background-image: url('../assets/recepcao.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 100%;
+    background-position: center;
+}
+.titulo-conteudo {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 20px;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+.padrao {
+    max-width: 600px;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+}
+.imagem-lista {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cards {
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+.figura img {
+    width: 100%;
+}
+figcaption {
+    text-transform: uppercase;
+    text-align: center;
+    padding: 10px;
+}
+.figura {
+    border-radius: 3px;
+    box-shadow: 0px 1px 10px rgb(0 0 0 / 50%);
+    margin: 20px;
+    width: calc(100% / 3 - 40px);
+}
+.horarios a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+}
+.horarios {
+    max-width: 150px;
+    margin: auto;
+    background-color: #00cad1;
+    text-align: center;
+    padding: 10px 20px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+span {
+    font-weight: bold;
+}
+/* Fim Estilos Conteúdo */
+
+/* Estilos Rodapé */
+footer {
+    background-color: #0d6e71;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+/* Fim Estilos Rodapé */
+
+/* Estilos tela até 425px */
+@media (max-width: 425px) {
+
+    /* Topo */
+    .topo-conteudo {
+        flex-direction: column;
+        height: 120px;
+    }
+    .topo-links {
+        border-top: 2px solid #03b0b6;
+    }
+    .topo-links a {
+        padding: 10px 30px;
+    }
+    .logo-topo {
+        margin-top: 10px;   
+    }
+    .logo-topo img {
+        height: 60px;
+    }
+    /* Fim Topo */
+
+    /* Contéudo */
+    .back-conteudo {
+        height: 200px;
+    }
+    .titulo-conteudo {
+        font-size: 16px;
+    }
+    .medico {
+        display: none;
+    }
+    .cards {
+        flex-direction: column;
+    }
+    .figura {
+        width: 90%;
+    }
+    /* Fim Conteúdo */
+}
+/* Fim Estilos tela até 425px */
+
+/* Estilos tela até 768px */
+@media (min-width: 426px) and (max-width: 768px) {
+
+    /* Contéudo */
+    .back-conteudo {
+        height: 300px;
+    }
+    .cards {
+        justify-content: center;
+    }
+    .figura {
+        width: calc(100% / 2 - 10px);
+    }
+    /* Fim Conteúdo */
+}
+/* Fim Estilos tela até 768px */
+
+/* Estilos tela até 1024px */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    /* Contéudo */
+    .back-conteudo {
+        height: 400px;
+    }
+    /* Fim Conteúdo */
+}
+/* Fim Estilos tela até 1024px */
+
+/* Estilos tela maior que 1024px */
+@media (min-width: 1025px) {
+
+    /* Contéudo */
+    .back-conteudo {
+        height: 500px;
+    }
+    /* Fim Conteúdo */
+}
+/* Fim Estilos tela maior que 1024px */
